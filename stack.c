@@ -1,11 +1,12 @@
-// ´Ü¹æÇâ ¿¬°á¸®½ºÆ®·Î ¸¸µç ½ºÅÃ
+// ë‹¨ë°©í–¥ ì—°ê²°ë¦¬ìŠ¤íŠ¸ë¡œ ë§Œë“  ìŠ¤íƒ
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include "DataStructure.h"
 
 extern int top;
 
-// pop : Çìµå¸¦ Çìµå°¡ °¡¸®Å°´ø ³ëµåÀÇ ´ÙÀ½ ³ëµå¸¦ °¡¸®Å°°Ô ÇÏ°í Ã³À½¿¡ °¡¸®Ä×´ø °÷Àº »èÁ¦
+// pop : í—¤ë“œë¥¼ í—¤ë“œê°€ ê°€ë¦¬í‚¤ë˜ ë…¸ë“œì˜ ë‹¤ìŒ ë…¸ë“œë¥¼ ê°€ë¦¬í‚¤ê²Œ í•˜ê³  ì²˜ìŒì— ê°€ë¦¬ì¼°ë˜ ê³³ì€ ì‚­ì œ
 void pop(NODE *head)
 {
 	NODE *temp = head->next;
@@ -19,7 +20,7 @@ void pop(NODE *head)
 		puts("Underflow detected");
 }
 
-// ½ºÅÃ »èÁ¦ : Çìµå µû¶ó°¡¸é¼­ ÆË ½ÃÅ´
+// ìŠ¤íƒ ì‚­ì œ : í—¤ë“œ ë”°ë¼ê°€ë©´ì„œ íŒ ì‹œí‚´
 void freeStack(NODE *head)
 {
 	while (head->next != NULL)
